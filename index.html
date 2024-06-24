@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genesys Chat Bot Integration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to Our Website</h1>
+    <p>This website integrates a Genesys Cloud chat bot.</p>
+ 
+    <!-- Genesys Web Chat Widget Embed Code -->
+    <script>
+        (function() {
+            var chatWidget = document.createElement("script");
+chatWidget.src = "https://apps.mypurecloud.com/widgets/genesys-webchat.js";
+            chatWidget.async = true;
+            chatWidget.onload = function() {
+                Genesys("webchat", {
+                    "id": "YOUR_WIDGET_ID",
+                    "dataURL": "YOUR_DATA_URL",
+                    "jwt": "YOUR_JWT_TOKEN",
+"appOrigin": "https://apps.mypurecloud.com"
+                });
+            };
+            document.head.appendChild(chatWidget);
+        })();
+    </script>
+    <!-- End of Genesys Web Chat Widget Embed Code -->
+</body>
+</html>
