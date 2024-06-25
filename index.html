@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genesys Cloud Chat Bot Integration</title>
+    <title>Genesys Chat Bot Integration</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Welcome to Our Website</h1>
-    <p>Thiss website integrates a Genesys Cloud chat bot.</p>
+    <p>This website integrates a Genesys Cloud chat bot.</p>
  
     <!-- Genesys Web Chat Widget Embed Code -->
     <script>
@@ -28,5 +28,19 @@ chatWidget.src = "https://apps.mypurecloud.com/widgets/genesys-webchat.js";
         })();
     </script>
     <!-- End of Genesys Web Chat Widget Embed Code -->
+<script type="text/javascript" charset="utf-8">
+  (function (g, e, n, es, ys) {
+    g['_genesysJs'] = e;
+    g[e] = g[e] || function () {
+      (g[e].q = g[e].q || []).push(arguments)
+    };
+    g[e].t = 1 * new Date();
+    g[e].c = es;
+    ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
+  })(window, 'Genesys', 'https://apps.mypurecloud.com/genesys-bootstrap/genesys.min.js', {
+    environment: 'prod',
+    deploymentId: '9d8c8693-46a6-4e4c-8c23-9c9b0cb9c409'
+  });
+</script>
 </body>
 </html>
